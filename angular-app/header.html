@@ -1,0 +1,25 @@
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" ng-click="appController.displayHome()">Modesto Catalog Manager envPlaceHolder</a>
+</div>
+<ul class="nav navbar-top-links navbar-right hidden-xs">
+    <li>
+        <a href="https://github.com/dataduplex/Modesto-pc-rest">
+            <i class="fa fa-github fa-lg"></i>&nbsp;Source
+        </a>
+    </li>
+    <li uib-dropdown>
+        <a uib-dropdown-toggle href="#" aria-expanded="true" ng-controller="username">
+            <i class="fa fa-user fa-lg"></i>&nbsp;{{ username }}&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-user" role="menu" ng-controller="logOutController">
+            <li><a href ng-click="logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+            <li><a href ng-click="passwordReset()"><i class="fa fa-sign-out fa-fw"></i> Reset Password</a></li>
+        </ul>
+    </li>
+</ul>
+<!--ng-click="isCollapsed = !isCollapsed"-->
